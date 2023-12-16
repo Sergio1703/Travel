@@ -4885,7 +4885,7 @@ button,
 
 .questions {
   position: relative;
-  min-height: 761px;
+  min-height: 760px;
 }
 @media (max-width: 1199px) {
   .questions {
