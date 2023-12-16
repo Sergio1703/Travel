@@ -1,11 +1,18 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { Form } from './modules/form-validate/form';
+import './modules/main-nav';
+import './modules/intro-video';
+import './modules/intro-slider';
+import './modules/tours-slider';
+import './modules/education-slider';
+import './modules/reviews-slider';
+import { initAdvantagesSlider, initResize } from './modules/advantages-slider';
+import './modules/gallery-slider';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
   // Utils
   // ---------------------------------
 
@@ -18,6 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    initAdvantagesSlider();
+    initResize();
     const form = new Form();
     window.form = form;
     form.init();

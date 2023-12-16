@@ -1,26 +1,79 @@
+// .btn {
+//   display: inline-flex;
+//   padding: 10px 20px;
+//   color: $color-default-white;
+//   background-color: $color-neon-blue;
+//   border: none;
+//   cursor: pointer;
+//   transition: opacity $trans-default;
+
+//   &--red {
+//     background-color: $color-torch-red;
+//   }
+
+//   &:disabled {
+//     opacity: 0.5;
+//     pointer-events: none;
+//   }
+
+//   @include hover-focus {
+//     opacity: 0.8;
+//   }
+// }
+
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
-
-  color: $color-default-white;
-
-  background-color: $color-neon-blue;
-  border: none;
+  width: 37px;
+  height: 35px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-blue-1;
+  user-select: none;
   cursor: pointer;
 
-  transition: opacity $trans-default;
+  &:hover {
+    background-color: $color-default-white;
+    border-color: $color-blue-2;
+  }
 
-  &--red {
-    background-color: $color-torch-red;
+  &:hover svg {
+    color: $color-blue-2;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $color-default-white;
+    border-color: $color-blue-2;
+  }
+
+  &:focus-visible svg {
+    color: $color-blue-2;
+  }
+
+  &:active {
+    background-color: $color-blue-2;
+    border-color: $color-blue-2;
+  }
+
+  &:active svg {
+    color: $color-default-white;
   }
 
   &:disabled {
-    opacity: 0.5;
-
-    pointer-events: none;
+    background-color: $color-gray-disabled;
+    border-color: $color-gray-disabled;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
+  &:disabled svg {
+    color: $color-default-white;
   }
+}
+
+.btn svg {
+  color: $color-default-white;
+}
+
+.btn--next svg {
+  transform: rotate(180deg);
 }

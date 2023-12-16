@@ -1,0 +1,142 @@
+.instructor-card {
+  padding: 15px;
+  background-color: $color-default-white;
+  border: 1px solid $color-grey-1;
+  min-height: 357px;
+  height: auto;
+
+  @include vp-1199 {
+    min-height: 388px;
+  }
+
+  @include vp-767 {
+    padding: 15px 15px 4px;
+    min-height: 356px;
+  }
+}
+
+.instructor-card__image-container {
+  margin-bottom: 17px;
+}
+
+.instructor-card__image-container img {
+  @include vp-767 {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.instructor-card__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 14px;
+}
+
+.instructor-card__title-container h5 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0;
+  max-width: 145px;
+}
+
+.instructor-card__link {
+  height: 25px;
+  width: 25px;
+  margin-top: -2px;
+
+  &:hover svg {
+    border-color: $color-default-black;
+  }
+
+  &:focus svg {
+    border-color: $color-default-black;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active svg {
+    border-color: $color-blue-1;
+    background-color: $color-blue-1;
+    color: $color-default-white;
+  }
+}
+
+.instructor-card__link svg {
+  padding: 8px 5px;
+  height: 25px;
+  width: 25px;
+  color: $color-default-black;
+  border: 1px solid $color-grey-1;
+}
+
+.instructor-card p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  max-width: 249px;
+
+  @include vp-767 {
+    max-width: 289px;
+  }
+}
+
+.instructor-card--3 p {
+  max-width: 235px;
+
+  @include vp-1199 {
+    max-width: max-content;
+  }
+}
+
+.instructor-card__desktop-transfer {
+  display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.instructor-card__desktop-transfer {
+  display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.instructor-card__tablet-transfer {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.instructor-card__mobile-transfer {
+  display: none;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}

@@ -1,28 +1,45 @@
 // Vendor
 // ---------------------------------
 
-@import "vendor/normalize";
+@import 'vendor/normalize';
+
 // Swiper 8.4.7
-// @import "vendor/swiper";
+
+@import 'vendor/swiper';
 
 // Global
 // ---------------------------------
 
-@import "variables";
-@import "mixins";
-@import "global/fonts";
-@import "global/reboot";
-@import "global/utils";
-@import "global/container";
+@import 'variables';
+@import 'mixins';
+@import 'global/fonts';
+@import 'global/reboot';
+@import 'global/utils';
+@import 'global/container';
 
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import 'blocks/btn';
+@import 'blocks/modal';
+@import 'blocks/custom-input';
+@import 'blocks/custom-toggle';
+@import 'blocks/custom-select';
+@import 'blocks/header';
+@import 'blocks/main-nav';
+@import 'blocks/intro';
+@import 'blocks/tours';
+@import 'blocks/tour-card';
+@import 'blocks/education';
+@import 'blocks/instructor-card';
+@import 'blocks/about';
+@import 'blocks/reviews';
+@import 'blocks/reviews-card';
+@import 'blocks/advantages';
+@import 'blocks/gallery';
+@import 'blocks/questions';
+@import 'blocks/contacts';
+@import 'blocks/footer.scss';
 
 // ---------------------------------
 

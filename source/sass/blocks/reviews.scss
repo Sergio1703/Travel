@@ -1,0 +1,157 @@
+.reviews {
+  position: relative;
+}
+
+.reviews__wrapper {
+  // padding: 43px 120px 10px;
+  padding: 43px 20px 10px;
+
+  @include vp-1199 {
+    padding: 35px 45px 37px;
+  }
+
+  @include vp-767 {
+    padding: 31px 0 0;
+  }
+}
+
+.reviews__content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews__title-content-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  @include vp-1199 {
+    margin-bottom: 33px;
+  }
+
+  @include vp-767 {
+    margin-bottom: -1px;
+    padding: 0 15px;
+  }
+}
+
+.reviews__title-container {
+  position: relative;
+
+  @include vp-767 {
+    margin-top: 7px;
+  }
+}
+
+.reviews__title-container span {
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  opacity: 0.03;
+
+  @include vp-1199 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.reviews__title-container h3 {
+  position: absolute;
+  top: 19px;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 100%;
+  margin: 0;
+
+  @include vp-1199 {
+    top: 12px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    top: 3px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.reviews__buttons-container {
+  display: flex;
+  gap: 4px;
+  margin-top: 5px;
+
+  @include vp-1199 {
+    margin-top: 1px;
+  }
+}
+
+.reviews__slider {
+  @include vp-767 {
+    padding: 15px;
+  }
+}
+
+.reviews__slider-wrapper {
+  padding: 10px;
+
+  @include vp-1199 {
+    padding: 20px 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.reviews__background-image-container {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.reviews__background-image-container img {
+  position: absolute;
+  left: 0;
+  bottom: -267px;
+  z-index: -1;
+
+  @include vp-1199 {
+    width: 753px;
+    height: 402px;
+    bottom: -617px;
+  }
+}
+
+.reviews__transfer-tablet {
+  display: block;
+
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.reviews__transfer-mobile {
+  display: none;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.reviews__transfer-desktop-2 {
+  display: block;
+}

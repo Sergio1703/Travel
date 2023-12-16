@@ -1,0 +1,207 @@
+.main-header {
+  position: relative;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.main-header__wrapper {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 34px 15px 30px 46px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: $color-blue-1;
+
+  @include vp-1199 {
+    padding: 12px 46px 8px 40px;
+  }
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 15px 13px 10px;
+    align-items: start;
+  }
+}
+
+.main-header__wrapper--switch {
+  @include vp-1199 {
+    background-color: $color-default-white;
+  }
+}
+
+.main-header__toggle {
+  padding: 0;
+  border: none;
+  background-color: $color-transparent;
+  // width: 26px;
+  // height: 19px;
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+    padding: 5px;
+  }
+
+  @include vp-767 {
+    width: 26px;
+    height: 19px;
+    margin-top: 3px;
+  }
+}
+
+// .main-header__toggle svg {
+//   display: none;
+
+//   @include vp-1199 {
+//     display: block;
+//   }
+// }
+
+.main-header__toggle--switch {
+  padding: 0;
+  border: none;
+  position: relative;
+  top: -31px;
+  left: 0;
+  background-color: $color-transparent;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 45px;
+    left: 3px;
+    width: 31px;
+    height: 2px;
+    background-color: $color-default-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-header__toggle--switch svg {
+  display: none;
+}
+
+.main-header__logo-container {
+  // justify-self: unset;
+  margin-right: 137px;
+
+  @include vp-1199 {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  @include vp-767 {
+    justify-self: end;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.main-header__logo-link {
+  display: block;
+  margin: 0;
+  padding: 7px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 1;
+    outline: 1px solid $color-default-white;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
+
+  @include vp-1199 {
+    margin-left: 98px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.main-header__logo-link svg {
+  color: $color-default-white;
+}
+
+.main-header__logo--switch svg {
+  @include vp-1199 {
+    color: $color-default-black;
+  }
+}
+
+.main-header__contact-number {
+  // justify-self: unset;
+  margin-left: auto;
+
+  @include vp-1199 {
+    // margin-left: auto;
+  }
+
+  @include vp-767 {
+    grid-column: 2/3;
+    display: flex;
+    justify-self: end;
+    align-self: self-end;
+  }
+}
+
+.main-header__contact-number-link {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  color: $color-default-white;
+  padding: 5px;
+
+  &:hover {
+    color: $color-blue-2;
+  }
+
+  &:focus {
+    outline: none;
+    color: $color-blue-2;
+  }
+
+  &:active {
+    color: $color-white-2;
+  }
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.main-header__contact-number-link--disabled {
+  color: $color-default-white;
+}
+
+.main-header__contact-number-link--switch {
+  @include vp-1199 {
+    color: $color-default-black;
+  }
+}
